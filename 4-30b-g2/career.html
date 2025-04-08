@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Burger King Careers Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<header class="navbar">
+		<div class="logo"></div>
+		<img src="fotot/logo.png">
+		<nav class="nav-links">
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="rewards.html">Rewards</a>
+			<a href="career.html">Careers</a>
+			<a href="giftcards.html">Gift Cards</a>
+			<div class="icon" id="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+		</nav>
+	</header>
+	<div class="header-section">
+	<div class="divv">
+	<h1>JOIN OUR BURGER KING FAMILY</h1>
+	<p>You can start searching for jobs on the map below</p>
+	</div>
+	</div>
+
+
+	<div class="job-search-section">
+	<div class="search-form">
+	<h2>BROWSE BURGER KING OPPORTUNITIES IN YOUR AREA:</h2>
+
+	<label for="position">All Positions</label>
+	<select id="position">
+	<option>All Positions</option>
+	<option>Cook</option>
+	<option>Cashier</option>
+	<option>Manager</option>
+	</select>
+
+		<label for="location">Location</label>
+		<input type="text" id="location" placeholder="Warminster, PA 18974">	
+		<button type="submit">Submit</button>
+	</div>
+
+	<div class="map-area">
+		<iframe	src="https://www.google.com/maps?q=New+York,NY&output=embed" allowfullscreen="" loading="lazy"></iframe>
+	</div>
+	</div>
+	<footer class="footer-note">	
+		<p> &copy; 2025 Burger King Company</p>
+	</footer>
+</body>
+</html>
