@@ -8,6 +8,7 @@ body{
 }
 
 header{
+	height: 70px;
 	margin-left: 0px;
 	padding: 0px;
 }
@@ -19,7 +20,9 @@ header{
 	padding: 15px 30px;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
+.icon{
+	display: none;
+}
 header img{
 	margin-left: -955px;
 	width: 200px;
@@ -48,16 +51,13 @@ header img{
 	cursor: pointer;
 }
 
-#hamburger-menu {
-    display: none;
-}
 .burger{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #ffb922;
 	padding: 50px 30px;
 	flex-wrap: wrap;
+	background: #ffb922;
 }
 
 .burger-text {
@@ -97,6 +97,7 @@ header img{
 	width: 280px;
 	height: 250px;
 }
+
 .ms{
 	font-family: Arial, sans-serif;
 	background-color: #fdfdfd;
@@ -151,75 +152,14 @@ header img{
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    nav{
-		background-color: #06206a;
-		overflow: hidden;
-		position: relative;
-		max-width: 400px;
+	section{
+		height: 200px;
 	}
-
-	nav{
-	background-color: #06206a;
-	overflow: hidden;
-	position: relative;
-	max-width: 400px;
-}
-nav #myLinks{
-	display: none;
-}
-nav a, button{
-	color: white;
-	padding: 14px 16px;
-	text-decoration: none;
-	font-size: 17px;
-	display: block;
-}
-button.icon{
-	background-color: #06206a;
-	display: block;
-	position: absolute;
-	margin-top: 10px;
-	right: 10px;
-	top: -3px;
-}
-nav a:hover{
-	background-color: #ddd;
-	color: black;
-}
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 10px;
-        font-size: 16px;
-        width: 100%;
-        text-decoration: none;
-        color: #222;
-        background-color: #fff;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .order-btn {
-        width: 100%;
-        padding: 12px;
-        margin-top: 10px;
-    }
-
+	.burger-img{
+	}
+	header img{
+		margin-left: -270px;
+	}
     .burger {
         flex-direction: column;
         text-align: center;
