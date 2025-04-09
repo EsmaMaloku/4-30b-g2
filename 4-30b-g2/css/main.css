@@ -24,7 +24,7 @@ header{
 	display: none;
 }
 header img{
-	margin-left: -955px;
+	margin-left: -65px;
 	width: 200px;
 	height: 100px;
 }
@@ -32,9 +32,17 @@ header img{
 .nav-links{
 	display: flex;
 	align-items: center;
-	gap: 20px;
+	gap: 30px;
 }
-
+.myLinks{
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+button.icon{
+	overflow: hidden;
+	display: none;
+}
 .nav-links a{
 	text-decoration: none;
 	color: #222;
@@ -97,7 +105,9 @@ header img{
 	width: 280px;
 	height: 250px;
 }
-
+hr{
+	width: 1000px;
+}
 .ms{
 	font-family: Arial, sans-serif;
 	background-color: #fdfdfd;
@@ -138,6 +148,7 @@ header img{
 	margin-bottom: 10px;
 }
 
+
 .footer-note {
 	background-color: #111;
 	color: #ccc;
@@ -151,9 +162,35 @@ header img{
 	text-decoration: underline;
 }
 
+
 @media (max-width: 768px) {
-	section{
-		height: 200px;
+	nav .myLinks{
+		display: none;
+	}
+	nav a, .icon{
+		color: white;
+		padding: 10px 12px;
+		text-decoration: none;
+		font-size: 15px;
+		display: block;
+	}
+	button.icon{
+		float: left;
+		overflow: hidden;
+		background-color: transparent;
+		display: block;
+		margin-top: 10px;
+		border: none;
+		cursor: pointer;
+		font-size: 28px;
+		top: 20px;
+		right: 20px;
+		z-index: 1000;
+		color: #000;
+	}
+	nav a:hover{
+		background-color: #ddd;
+		color: black;
 	}
 	.burger-img{
 	}
@@ -191,5 +228,5 @@ header img{
     .footer-note {
         font-size: 12px;
         padding: 15px;
-    }
+    } 
 }
