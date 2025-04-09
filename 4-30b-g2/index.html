@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Burger King</title>
-<link rel="stylesheet" href="css/main.css"/>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Burger King</title>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header class="navbar">
-<div class="logo"></div>
-<img src="fotot/logo.png">
-<nav class="nav-links">
-		<a href="index.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="rewards.html">Rewards</a>
-		<a href="career.html">Careers</a>
-		<a href="giftcards.html">Gift Cards</a>
-		<button class="icon"><i class="fa fa-bar"></i></button>
-	<button class="order-btn">Start Order</button>
-</nav>
-</header>
+	<header class="navbar">
+	<img src="fotot/logo.png">
+	<div class="logo"></div>
+	<nav class="nav-links">
+		<div class="myLinks" id="myLinks">
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="rewards.html">Rewards</a>
+			<a href="career.html">Careers</a>
+			<a href="giftcards.html">Gift Cards</a>
+			</div>
+			<button class="icon" onclick="openMenu()">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+		<button class="order-btn">Start Order</button>
+	</nav>
+	</header>
 
 	<section class="burger">
 		<div class="burger-text">
@@ -32,6 +37,7 @@
 	<div class="ms">	
 		<div class="ms-section">
 			<div class="ms-title">MOST SELLED</div>
+			<hr>
 			<div class="ms-items">
 				<div class="ms-item">
 					<div class="ms-img"><img src="fotot/dchb.png"></div>
@@ -60,9 +66,43 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="ms">	
+		<div class="ms-section">
+			<div class="ms-title">LIMITED TIME ONLY MEALS</div>
+			<hr>
+			<div class="ms-items">
+				<div class="ms-item">
+					<div class="ms-img"><img src="fotoT/duo.png"></div>
+					<div>Duo</div>
+				</div>
+				<div class="ms-item">
+					<div class="ms-img"><img src="fotot/trio.png"></div>
+					<div>Trio</div>
+				</div>
+				<div class="ms-item">
+					<div class="ms-img"><img src="fotot/sbwh.png"></div>
+					<div>Steakhouse Bacon Whopper</div>
+				</div>
+				<div class="ms-item">
+					<div class="ms-img"><img src="fotot/fbf.png"></div>
+					<div>Fiery Big Fish</div>
+				</div>
+				<div class="ms-item">
+					<div class="ms-img"><img src="fotot/jchb.png"></div>
+					<div>Jalapeño Cheddar Bites</div>
+				</div>
+				<div class="ms-item">
+					<div class="ms-img"><img src="fotot/chf.png"></div>
+					<div>Churro Fries</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
 	<footer class="footer-note">
 		<p> &copy; 2025 Burger King Company</p>
 	</footer>
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
