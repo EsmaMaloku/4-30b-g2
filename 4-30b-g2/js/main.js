@@ -82,6 +82,33 @@ function changeSlideMenu(n) {
     showSlideMenu(slideIndexMenu);
 }
 
+function filterMenu() {
+    const searchInput = document.getElementById('menu-search').value.toLowerCase();
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuItems.forEach(item => {
+        const itemName = item.querySelector('h2').textContent.toLowerCase();
+        if (itemName.includes(searchInput)) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+function filterCategory(category) {
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    menuItems.forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
 showSlideMS(slideIndexMS);
 showSlideLMS(slideIndexLMS);
 showSlideMenu(slideIndexMenu);
+
