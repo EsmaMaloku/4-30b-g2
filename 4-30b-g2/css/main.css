@@ -51,14 +51,14 @@ button.icon{
 }
 
 .order-btn{
-    background-color: #008080;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-        cursor: pointer;
-    }
+	background-color: #008080;
+	color: white;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
 
 .burger{
 	display: flex;
@@ -122,6 +122,7 @@ hr{
 }
 
 .ms-section{
+	
 	text-align: center;
 }
 
@@ -206,7 +207,7 @@ hr{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: auto;
+	height: 600px;
 	font-weight: bold;
 }
 .menu-section h1 {
@@ -293,14 +294,124 @@ button {
 	gap: 40px;
 	background-color: transparent;
 }
-.trending-menu{
+/*.trendingsection{
 	width: 100%;
 	text-align: center;
-	background-image: url("../fotot/");
+	background-image: url("../fotot/cimg2.jpg");
 	background-repeat: no-repeat;
+	background-: ;
 	background-position: center;
 	height: auto;
 	font-weight: bold;
+}
+.trending-menu{
+	width: 100%;
+}*/
+.sweet-section{
+	color: white;
+	width: 100%;
+	text-align: center;
+	background-image: url("../fotot/sweetb.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	font-weight: bold;
+}
+.sweet-section h1 {
+	font-size: 32px;
+	top: 100px;
+	align-items: center;
+}
+
+.sweet-section p {
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 30px;
+}
+
+.sweet-items {
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.sweet-item {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	padding: 20px;
+	width: 200px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.sweet-item img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.sweet-item h2 {
+	font-size: 16px;
+	margin: 10px 0 5px;
+}
+
+.sweet-item p {
+	font-size: 15px;
+	color: white;
+}
+.drinks-section{
+	color: white;
+	width: 100%;
+	text-align: center;
+	background-image: url("../fotot/drinksb.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	font-weight: bold;
+}
+.drinks-section h1 {
+	font-size: 32px;
+	top: 100px;
+	align-items: center;
+}
+
+.drinks-section p {
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 30px;
+}
+
+.drinks-items {
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 40px;
+}
+
+.drinks-item {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+	padding: 20px;
+	width: 200px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.drinks-item img {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.drinks-item h2 {
+	font-size: 16px;
+	margin: 10px 0 5px;
+}
+
+.drinks-item p {
+	font-size: 15px;
+	color: white;
 }
 .footer-note{
 	background-color: #111;
@@ -315,117 +426,6 @@ button {
 	text-decoration: underline;
 }
 
-/* Menu Header */
-.menu-header {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.menu-header input {
-    width: 80%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-/* Search Bar Styling */
-#menu-search {
-    width: 80%;
-    max-width: 500px;
-    padding: 10px 15px;
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    border-radius: 25px;
-    font-size: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#menu-search:focus {
-    outline: none;
-    border-color: #007BFF; /* Blue border on focus */
-    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Subtle blue shadow */
-}
-
-.menu-header input::placeholder {
-    color: #aaa; /* Placeholder text color */
-    font-style: italic;
-}
-
-/* Menu Categories */
-.menu-categories {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.menu-categories button {
-    padding: 10px 15px;
-    margin: 5px;
-    border: none;
-    background-color: #008080;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.menu-categories button:hover {
-    background-color: #0056b3;
-}
-
-/* Menu Items */
-.menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.menu-item {
-    text-align: center;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.menu-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.menu-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.menu-item h2 {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-.menu-item p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.menu-item .order-btn {
-    background-color: #008080;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.menu-item .order-btn:hover {
-    background-color: #0056b3;
-}
 
 @media (max-width: 768px) {
 	.ms{
@@ -809,7 +809,6 @@ button {
 	}
 
 	.burger{
-		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -863,8 +862,6 @@ button {
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;*/
-
-		width: 100%;
 		font-family: Arial, sans-serif;
 		background-color: #fdfdfd;
 		margin: 20px;
