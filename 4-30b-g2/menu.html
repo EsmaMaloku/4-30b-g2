@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Menu</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="fotot/logo.png" alt="Burger King Logo">
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="rewards.html">Rewards</a>
+            <a href="career.html">Careers</a>
+            <a href="giftcards.html">Gift Cards</a>
+            <button class="order-btn">Start Order</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-header">
+            <h1>Our Menu</h1>
+            <p>Explore our delicious menu items, crafted to satisfy every craving.</p>
+            <input type="text" id="menu-search" placeholder="Search menu items..." oninput="filterMenu()">
+        </section>
+
+        <section class="menu-categories">
+            <button onclick="filterCategory('all')">All</button>
+            <button onclick="filterCategory('burgers')">Burgers</button>
+            <button onclick="filterCategory('sides')">Sides</button>
+            <button onclick="filterCategory('drinks')">Drinks</button>
+            <button onclick="filterCategory('desserts')">Desserts</button>
+        </section>
+
+        <section class="menu-items" id="menu-items">
+            <!-- Burgers -->
+            <div class="menu-item" data-category="burgers">
+                <img src="fotot/dwh.png" alt="Double Whopper">
+                <h2>Double Whopper</h2>
+                <p>$7.89 | 920 Cal</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="menu-item" data-category="burgers">
+                <img src="fotot/kingm.png" alt="Double Cheeseburger King Meal">
+                <h2>Double Cheeseburger King Meal</h2>
+                <p>$7.09 | 665 Cal</p>
+                <button class="order-btn">Order</button>
+            </div>
+
+            <!-- Sides -->
+            <div class="menu-item" data-category="sides">
+                <img src="fotot/chn.png" alt="Chicken Nuggets">
+                <h2>Chicken Nuggets</h2>
+                <p>$3.49 | 390 Cal</p>
+                <button class="order-btn">Order</button>
+            </div>
+            <div class="menu-item" data-category="sides">
+                <img src="fotot/frenchfries.png" alt="French Fries">
+                <h2>French Fries</h2>
+                <p>$2.99 | 320 Cal</p>
+                <button class="order-btn">Order</button>
+            </div>
+
+            <!-- Drinks -->
+            <div class="menu-item" data-category="drinks">
+                <img src="fotot/soda.png" alt="Soda">
+                <h2>Soda</h2>
+                <p>$1.99 | 150 Cal</p>
+                <button class="order-btn">Order</button>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-item" data-category="desserts">
+                <img src="fotot/icecream.png" alt="Ice Cream">
+                <h2>Ice Cream</h2>
+                <p>$1.49 | 200 Cal</p>
+                <button class="order-btn">Order</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-note">
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2025 Burger King Company</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
