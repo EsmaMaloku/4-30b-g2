@@ -4,3 +4,4 @@
     const scrollAmount = 120;
     slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
   }
+  
